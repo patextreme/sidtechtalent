@@ -1,0 +1,40 @@
+Random Forrest:
+	- reduce variance
+	- composed of multiple independent trees
+	- parallel tree construction
+
+
+Gradient Boosted Tree:
+	- reduce bias
+	- sensitive to hyper parameters
+	- sequential tree construction
+	- predict residual (or other form of residual-related loss func)
+	- Packages:
+		- GBT in sklearn very slow
+		- XGBOOST faster than sklearn
+		- LightGBM (faster than XGBOOST)
+		- CatBoost (optimized for catagorial varialbles):
+			- claim to outperform XGBOOST
+
+
+Neural Network:
+	- Regularization:
+		- Dropout:
+			- remove some randomly node in each iteration
+			- avoid overfit
+		- Add noise to training data:
+			- network not fully rely on training data
+		- Early stopping:
+			- stop before training error overly converged
+		- Batch normalization:
+			- new technique
+
+
+Recommender Algorithm:
+	- Try:
+		- implicit feedback factorization
+		- co-occurence:
+			- normalized by popularity
+	- Eval:
+		- counterfactual evaluation (recommender system)
+
